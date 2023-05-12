@@ -26,6 +26,7 @@ class NotesViewModel @Inject constructor(
     private var recentlyDeletedNote: Note? = null
 
     private var getNotesJob: Job? = null
+    private var mynote = ""
 
     init {
         getNotes(NoteOrder.Date(OrderType.Descending))
